@@ -1,6 +1,6 @@
 
 * {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing:border-box;
 }
 
@@ -16,6 +16,9 @@ h2{
 }
 body, p, li{
   font-weight: 400;
+}
+p{
+  margin: 10px;
 }
 
 header{
