@@ -35,30 +35,30 @@
 
   <main>
     <h1>Home</h1>
-
-    <section><h2>About Me</h2>
-    <p>My name is Alonso Alvarado, I'm originally from Costa Rica and I am a Software Development student. I am learning to build websites, improve my coding skills, and create simple digital tools that solve real problems. I enjoy projects that challenge me to think clearly, stay organized, and keep improving one step at a time.</p>
-    </section>
-    
-    <section class="student-photo"><h2>Student Photo</h2>
-    <img src="images/student-photo.jpeg" alt="Student photo" width="200" height="200">
-    </section>
-    
-    <section>
-      <h2>Web Certificate Courses</h2>
-    <!--Buttons--> 
-    <div>
-      <button data-filter="all">All</button>
-      <button data-filter="CSE">CSE</button>
-      <button data-filter="WDD">WDD</button>
-    </div>
-    <!--JS insert the courses-->
-    <div id="courses-container" class="courses-list">
+    <div class="cards">
+      <section class="about-card"><h2 class="sub-titles">About Me</h2>
+      <p>My name is Alonso Alvarado, I'm originally from Costa Rica and I am a Software Development student. I am learning to build websites, improve my coding skills, and create simple digital tools that solve real problems. I enjoy projects that challenge me to think clearly, stay organized, and keep improving one step at a time.</p>
+      </section>
       
+      <section class="photo-card"><h2 class="sub-titles">Student Photo</h2>
+      <img src="images/student-photo.webp" alt="Student photo" width="200" height="200">
+      </section>
+      
+      <section class="courses-card">
+        <h2 class="sub-titles">Web Certificate Courses</h2>
+      <!--Buttons--> 
+      <div class="courses-btn">
+        <button class="course-fitler1" data-filter="ALL">All</button>
+        <button class="course-fitler2" data-filter="CSE">CSE</button>
+        <button class="course-fitler3" data-filter="WDD">WDD</button>
+      </div>
+      <!--JS insert the courses-->
+      </section>
+      <div id="courses-container" class="courses-list">
+      </div>
+      <!--Credits-->
+      <p>Total Credits: <span id="total-credits">0</span></p>
     </div>
-    <!--Credits-->
-    <p>Total Credits: <span id="total-credits">0</span></p>
-    </section>
   </main>
 
   <footer>
@@ -68,8 +68,10 @@
       <a href="https://www.instagram.com/alonsoav_/" target="_blank"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
       <a href="https://www.facebook.com/alonso.alvaradovargas.96" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
     </div>
+    <div class="footer-js">
     <p>© <span id="currentYear"> Alonso Alvarado, Utah, USA</span></p>
     <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
   </footer>
 </body>
 </html>
