@@ -36,17 +36,10 @@ p{
   line-height: 1.6;
 }
 
-.sub-titles{
-  background-color:#1e3a8a;
-  color: white;
-  text-align: center;
-  padding: 0.6rem;
-  margin: 0;
-}
 /*****HEADER*****/
 header{
   display: grid;
-  grid-template-columns: 24px auto 44px;
+  grid-template-columns: 40px auto 44px;
   padding: .6rem 1rem;
   align-items:center;
   border-bottom: solid 1px #E2E8F0;
@@ -125,6 +118,14 @@ main{
   gap: 1rem;
 }
 
+.sub-titles{
+  background-color:#1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0;
+}
+
 .about-card p, .courses-card p{
   padding: .8rem;
   margin: 0;
@@ -147,9 +148,9 @@ main{
   overflow: hidden;
 }
 .course-card {
-  padding: 1rem;
+  padding: .4rem;
   border: 2px solid #cbd5e1;
-  border-radius: 8px;
+  border-radius: 6px;
   background: linear-gradient(
     90deg,
     #1E3A8A 0%,
@@ -158,10 +159,11 @@ main{
     #7885a0 70%,
     #9fb1e0 100%
   );
-  color: #1f2937;
+  color: #ffffff;
   text-align: center;
+  font-size: .9rem;
   font-weight: 600;
-  margin-top: .5rem;
+  margin-top: .35rem;
 }
 
 .course-card.completed{
@@ -169,7 +171,9 @@ main{
   color: #ffffff;
   border-color:#1E3A8A ;
 }
-.courses-card p {
+.credits-total {
+  padding: .8rem;
+  margin: 0;
   text-align: center;
   font-weight: 600;
 }
@@ -196,7 +200,7 @@ background-color: #1E3A8A;
 color: #ffffff;
 }
 
-.course-list{
+.courses-list{
   display: grid;
   gap: .8rem;
   padding: 0 1rem 1rem;
@@ -207,7 +211,6 @@ footer{
   padding: .7rem;
   text-align: center;
   margin-top: 1rem;
-  min-height: 120px;
 }
 footer p{
   margin: 0.25rem 0;
