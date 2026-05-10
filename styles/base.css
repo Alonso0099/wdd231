@@ -1,30 +1,53 @@
-
+/*****GLOBAL******/
 * {
-  font-family: "Poppins", sans-serif;
   box-sizing:border-box;
 }
 
-h1, nav a, button{
-  font-weight: 700;
-}
-h1{
-  margin-left: 10px;
-}
-h2{
-  font-weight: 600;
-  margin-left: 10px;
-}
-body, p, li{
-  font-weight: 400;
-}
-p{
-  margin: 10px;
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #1f2937;
+  background-color: #f8fafc;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/******TYPOGRAPHY*****/
+h1, h2, p{
+  margin-top:0;
+}
+
+h1{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+h2{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p{
+  line-height: 1.6;
+}
+
+.sub-titles{
+  background-color:#1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0;
+}
+/*****HEADER*****/
 header{
   display: grid;
   grid-template-columns: 24px auto 44px;
-  padding: 5px 0 5px 10px;
+  padding: .6rem 1rem;
   align-items:center;
   border-bottom: solid 1px #E2E8F0;
   column-gap: 8px;
@@ -35,28 +58,23 @@ header img {
   width: 100%;
   height: auto;
 }
-header h1 {
-  font-size: 1.2rem;
-  color:#1E3A8A;
-}
-.sub-titles{
-  background-color:#1E3A8A;
-  color: white;
-}
 
-.about-card, .photo-card{
-  background-color: #cecccc;
-  border: 1px solid #1E3A8A;
+header span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:#1E3A8A;
 }
 
 /*Haburger  nav button*/
 .hamburger{
-  background-color: none;
+  background: none;
   border: none;
   color:#1E3A8A;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
 }
+
 .hamburger::before{
   content: "\2630";
 }
@@ -86,22 +104,81 @@ header h1 {
   border-bottom: solid 1px #E2E8F0;
   text-align: center;
 }
-.navigation li .current{
-  background-color: #cecccc;
+.navigation a.current{
+  background-color: #dbeafe;
+  font-weight: 700;
 }
 
 .navigation a:hover{
-  background-color: #cecccc;
+  background-color: #dbeafe;
+}
+/*****MAIN*****/
+main{
+  padding: 1rem;
+}
+/*****CARDS*****/
+
+.cards{
+  display: grid;
+  gap: 1rem;
 }
 
-/*****Courses Buttons*****/
-
-
-/****************FOOTER******************/
-.footer-js{
-  background-color: #cecccc;
-  padding: 1rem 10px;
+.about-card p, .courses-card p{
+  padding: .8rem;
+  margin: 0;
+}
+.photo-card{
   text-align: center;
+}
+.photo-card img {
+  display: block;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+
+.about-card, .photo-card, .courses-card{
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*****COURSES BUTTONS*****/
+.courses-btn{
+  display: grid;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.course-filter{
+  padding: .7rem;
+  border: 1px solid #1E3A8A;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1E3A8A;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.course-filter:hover, .course-filter.active{
+background-color: #1E3A8A;
+color: #ffffff;
+}
+
+.course-list{
+  display: grid;
+}
+/****************FOOTER******************/
+footer{
+  background-color: #e5e7eb;
+  padding: .7rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+footer p{
+  margin: 0.25rem 0;
 }
 .social{
 display: flex;
@@ -123,5 +200,5 @@ column-gap: 8px;
 }
 
 .social a:hover{
-  background-color: #ddd;
+  background-color: #c7c4c4;
 }
