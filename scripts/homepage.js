@@ -109,8 +109,11 @@ function displayCourses(coursesList) {
 
     if (course.completed === true){
       courseCard.classList.add("completed");
+      courseCard.textContent =`✔ ${course.subject} ${course.number}`;
+    } else{
+      courseCard.textContent =`${course.subject} ${course.number}`;
     }
-    courseCard.textContent =`${course.subject} ${course.number}`;
+    
     coursesContainer.appendChild(courseCard);
   }); 
  //Display credits 
