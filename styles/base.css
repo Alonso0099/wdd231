@@ -69,6 +69,8 @@ header span {
 .hamburger{
   background: none;
   border: none;
+  width: 44px;
+  height: 44px;
   color:#1E3A8A;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -132,8 +134,8 @@ main{
 }
 .photo-card img {
   display: block;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin: 1rem auto;
 }
@@ -198,6 +200,7 @@ color: #ffffff;
   display: grid;
   gap: .8rem;
   padding: 0 1rem 1rem;
+  min-height: 120px;
 }
 /****************FOOTER******************/
 footer{
@@ -205,6 +208,7 @@ footer{
   padding: .7rem;
   text-align: center;
   margin-top: 1rem;
+  min-height: 120px;
 }
 footer p{
   margin: 0.25rem 0;
