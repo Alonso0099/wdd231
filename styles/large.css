@@ -38,9 +38,6 @@ header{
 .courses-card{
   grid-column: 1/3;
 }
-.course-card{
-   min-height: 260px;
-}
 .courses-btn{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
