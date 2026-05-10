@@ -50,7 +50,6 @@ header{
 }
 .courses-list{
   grid-template-columns: repeat(3, 1fr);
-  min-height: 120px;
 }
 
 }
