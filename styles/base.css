@@ -144,6 +144,33 @@ main{
   border-radius: 8px;
   overflow: hidden;
 }
+.course-card {
+  padding: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #1E3A8A 0%,
+    #2b3f81 30%,
+    #3b4f86 50%,
+    #7885a0 70%,
+    #9fb1e0 100%
+  );
+  color: #1f2937;
+  text-align: center;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+
+.course-card.completed{
+  background: #1E3A8A;
+  color: #ffffff;
+  border-color:#1E3A8A ;
+}
+.courses-card p {
+  text-align: center;
+  font-weight: 600;
+}
 
 /*****COURSES BUTTONS*****/
 .courses-btn{
@@ -169,6 +196,8 @@ color: #ffffff;
 
 .course-list{
   display: grid;
+  gap: .8rem;
+  padding: 0 1rem 1rem;
 }
 /****************FOOTER******************/
 footer{
