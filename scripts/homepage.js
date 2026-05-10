@@ -94,7 +94,7 @@ const courses = [
         ],
         completed: false
     }
-]
+];
 
 // course rendering
 const coursesContainer = document.querySelector('#courses-container');
@@ -108,7 +108,7 @@ function displayCourses(coursesList) {
     courseCard.classList.add("course-card");
 
     if (course.completed === true){
-    courseCard.classList.add("completed");
+      courseCard.classList.add("completed");
     }
     courseCard.textContent =`${course.subject} ${course.number}`;
     coursesContainer.appendChild(courseCard);
@@ -126,7 +126,7 @@ function displayCredits(coursesList) {
 const filterButtons = document.querySelectorAll('.course-filter');
 
 filterButtons.forEach((button) => {
-button.addEventListener('click', () => {
+  button.addEventListener('click', () => {
   const filter = button.dataset.filter;
  
   filterButtons.forEach((btn) => {
@@ -144,5 +144,5 @@ button.addEventListener('click', () => {
  });
 });
 
-//Display
+//Initial display
 displayCourses(courses);
