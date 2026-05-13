@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+main {
+  padding: 0 1rem 1rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #1e3a8a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+article {
+  background-color: #999aa3;
+  border: 1px solid #8b8fb5;
+  padding: 0.7rem 0.5rem;
+  text-align: center;
+}
+article h2 {
+  margin: 0 0 0.35rem;
+  color: #1e3a8a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+article p {
+  margin: 0.15rem 0;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+article img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0.7rem auto 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
