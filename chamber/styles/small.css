@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f8fafc;
+}
+
+header {
+  background-color: #1f4e5f;
+  color: white;
+  padding: 1rem;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+}
+
+#menu-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #f2a65a;
+  color: #1f2937;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: #1f4e5f;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-toggle button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #1f4e5f;
+  color: white;
+  cursor: pointer;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.member-card {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.member-card h2 {
+  color: #1f4e5f;
+  margin-top: 0;
+}
+
+.member-card a {
+  color: #1f4e5f;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #1f4e5f;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}

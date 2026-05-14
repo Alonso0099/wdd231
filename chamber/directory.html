@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pleasant Grove Chamber of Commerce business directory">
+    <meta name="author" content="Alonso Alvarado">
+    <meta property="og:title" content="Pleasant Grove Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses and members of the Pleasant Grove Chamber of Commerce.">
+    <meta property="og:image" content="https://alonso0099.github.io/wdd231/chamber/images/og-image.webp">
+    <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <title>Pleasant Grove Chamber of Commerce Directory</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Business Directory</h1>
+
+        <section class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </section>
+
+        <section id="members-container" class="grid-view">
+        </section>
+    </main>
+
+    <footer>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/alonso-alvarado-4b5498223/" target="_blank" rel="noopener"> <img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+        <a href="https://github.com/alonso0099" target="_blank" rel="noopener"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
+        <a href="https://www.instagram.com/alonsoav_/" target="_blank" rel="noopener"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
+        <a href="https://www.facebook.com/alonso.alvaradovargas.96" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
+    </div>
+
+    <div>
+        <p>WDD 231 Class Project</p>
+        <p>© <span id="currentYear"></span> Pleasant Grove Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
+    </div>
+    </footer>
+</body>
+</html>
