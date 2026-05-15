@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Pleasant Grove - Lindon Chamber of Commerce",
+    "address": "70 S 100 E, Pleasant Grove, UT 84062",
+    "phone": "801-922-4555",
+    "website": "https://www.pglindonchamber.org/",
+    "image": "placeholder.webp",
+    "membership": 3,
+    "description": "Local chamber organization supporting business growth, networking, and community development."
+  },
+  {
+    "name": "Central Bank",
+    "address": "801 S Pleasant Grove Blvd, Pleasant Grove, UT 84062",
+    "phone": "801-555-2301",
+    "website": "https://cbutah.com/",
+    "image": "placeholder.webp",
+    "membership": 3,
+    "description": "Community banking services for individuals, families, and local businesses."
+  },
+  {
+    "name": "Dahlia's Hope",
+    "address": "220 S 2500 W, Pleasant Grove, UT 84062",
+    "phone": "801-555-2302",
+    "website": "https://dahliashope.org/",
+    "image": "placeholder.webp",
+    "membership": 2,
+    "description": "Nonprofit organization serving the community through recovery and support resources."
+  },
+  {
+    "name": "Hyatt House Provo / Pleasant Grove",
+    "address": "544 S Pleasant Grove Blvd, Pleasant Grove, UT 84062",
+    "phone": "801-555-2303",
+    "website": "https://www.hyatt.com/",
+    "image": "placeholder.webp",
+    "membership": 2,
+    "description": "Hotel serving visitors, business travelers, and families in the Pleasant Grove area."
+  },
+  {
+    "name": "Dutch Bros Coffee",
+    "address": "442 S Pleasant Grove Blvd, Pleasant Grove, UT 84062",
+    "phone": "801-555-2304",
+    "website": "https://www.dutchbros.com/",
+    "image": "placeholder.webp",
+    "membership": 1,
+    "description": "Coffee shop offering drinks and quick service for the local community."
+  },
+  {
+    "name": "Purple Turtle",
+    "address": "85 E State Rd, Pleasant Grove, UT 84062",
+    "phone": "801-555-2305",
+    "website": "https://example.com",
+    "image": "placeholder.webp",
+    "membership": 1,
+    "description": "Local restaurant known in the Pleasant Grove community."
+  },
+  {
+    "name": "Major League Auto Repair",
+    "address": "685 W State Rd, Pleasant Grove, UT 84062",
+    "phone": "801-555-2306",
+    "website": "https://example.com",
+    "image": "placeholder.webp",
+    "membership": 1,
+    "description": "Auto repair business serving drivers in Pleasant Grove and nearby areas."
+  }
+]

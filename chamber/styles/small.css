@@ -32,6 +32,13 @@ header {
   padding: 0.5rem;
   font-size: 1.5rem;
 }
+.hamburger::before{
+  content: "\2630";
+}
+
+.hamburger.show::before{
+  content: "\00D7";
+}
 
 nav {
   display: none;

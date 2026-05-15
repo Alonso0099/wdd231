@@ -20,27 +20,41 @@
 
 </head>
 <body>
-    <header>
-        <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="directory.html" class="active">Directory</a>
-        <a href="join.html">Join</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Business Directory</h1>
+  <header>
+    <div class="site-branding">
+      <img src="images/favicon.ico" alt="Pleasant Grove Chamber logo" width="48" height="48">
+      <span>Pleasant Grove Chamber of Commerce</span>
+    </div>
 
-        <section class="view-toggle">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
-        </section>
+    <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
 
-        <section id="members-container" class="grid-view">
-        </section>
-    </main>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <section class="view-toggle" aria-label="Directory view options">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </section>
+
+    <section id="members-container" class="grid-view"></section>
+  </main>
 
     <footer>
+    
+    <div>
+      <strong>Pleasant Grove Chamber of Commerce</strong>
+      <p>70 S 100 E<br>Pleasant Grove, UT 84062</p>
+      <p>info@pgchamber.org</p>
+      <p>(801) 555-2300</p>
+    </div>
     <div class="social">
         <a href="https://www.linkedin.com/in/alonso-alvarado-4b5498223/" target="_blank" rel="noopener"> <img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
         <a href="https://github.com/alonso0099" target="_blank" rel="noopener"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
