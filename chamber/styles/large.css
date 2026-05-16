@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: space-between;
   }
-
+header img{
+  max-width: 150px;
+  height: auto;
+}
   #menu-button {
     display: none;
   }
