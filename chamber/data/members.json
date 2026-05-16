@@ -48,7 +48,7 @@
     "name": "Purple Turtle",
     "address": "85 E State Rd, Pleasant Grove, UT 84062",
     "phone": "801-555-2305",
-    "website": "https://example.com",
+    "website": "https://purpleturtlediner.com/",
     "image": "restaurant.webp",
     "membership": 1,
     "description": "Local restaurant known in the Pleasant Grove community."
@@ -57,7 +57,7 @@
     "name": "Major League Auto Repair",
     "address": "685 W State Rd, Pleasant Grove, UT 84062",
     "phone": "801-555-2306",
-    "website": "https://example.com",
+    "website": "https://www.majorleagueautorepair.com/",
     "image": "auto-repair.webp",
     "membership": 1,
     "description": "Auto repair business serving drivers in Pleasant Grove and nearby areas."
