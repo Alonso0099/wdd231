@@ -30,7 +30,7 @@ header img{
   }
   .list-view .member-card img {
     width: 200px;
-    height: auto;
+    height: 150px;
     aspect-ratio: 3 / 2;
     object-fit: cover;
     margin-bottom: 0;

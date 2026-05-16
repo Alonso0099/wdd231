@@ -118,7 +118,7 @@ h1 {
   max-width: 150px;
   aspect-ratio: 3/2;
   object-fit: cover;
-  height: auto;
+  height: 150px;
   display: block;
   margin-bottom: 1rem;
   border-radius: 8px;
