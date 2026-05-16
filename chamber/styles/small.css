@@ -15,7 +15,7 @@ header {
   padding: 1rem;
 }
 header img{
-  max-width: 130px;
+  max-width: 150px;
   height: auto;
   object-fit: contain;
 }
@@ -142,6 +142,13 @@ footer {
 }
 
 footer a {
+  color: white;
+}
+.site-branding span {
+  color: white;
+}
+
+footer span {
   color: white;
 }
 
