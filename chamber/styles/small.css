@@ -28,9 +28,9 @@ header {
   margin-top: 1rem;
   background: none;
   color: white;
-  border: 1px solid white;
+  border: none;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .hamburger::before{
   content: "\2630";
@@ -38,6 +38,7 @@ header {
 
 .hamburger.show::before{
   content: "\00D7";
+  font-size: 2.75rem;
 }
 
 nav {
