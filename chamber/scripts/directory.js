@@ -46,7 +46,7 @@ function displayMembers(members) {
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
+        <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
       </div>
     `;
 
