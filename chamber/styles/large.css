@@ -25,6 +25,11 @@
     gap: 1rem;
     align-items: center;
   }
+  .list-view .member-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0;
+  }
 
   footer {
     display: grid;
