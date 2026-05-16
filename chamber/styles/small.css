@@ -17,6 +17,7 @@ header {
 header img{
   max-width: 130px;
   height: auto;
+  object-fit: contain;
 }
 
 .site-branding {
@@ -115,6 +116,8 @@ h1 {
 .member-card img {
   width: 100%;
   max-width: 150px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
   height: auto;
   display: block;
   margin-bottom: 1rem;
@@ -146,4 +149,8 @@ footer a {
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
+}
+
+#members-container {
+  min-height: 900px;
 }

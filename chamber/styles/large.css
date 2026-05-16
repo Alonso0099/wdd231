@@ -31,6 +31,8 @@ header img{
   .list-view .member-card img {
     width: 200px;
     height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     margin-bottom: 0;
     border-radius: 8px;
   }
@@ -41,4 +43,7 @@ header img{
     gap: 2rem;
     align-items: center;
   }
+  #members-container {
+  min-height: 600px;
+}
 }
