@@ -24,7 +24,7 @@ header img{
 
   .list-view .member-card {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 1rem;
     align-items: center;
   }
