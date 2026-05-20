@@ -1,0 +1,58 @@
+import { setupNavigation } from "./navigation.mjs";
+import { getMembers, getMembershipLevel } from "./members.mjs";
+
+const membersContainer = document.querySelector("#members-container");
+const gridButton = document.querySelector("#grid-view");
+const listButton = document.querySelector("#list-view");
+
+// Start the mobile navigation
+setupNavigation();
+
+// Display member cards on the page
+function displayMembers(members) {
+  membersContainer.innerHTML = "";
+
+  members.forEach((member) => {
+    const card = document.createElement("article");
+    card.classList.add("member-card");
+
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name} logo" width="300" height="200" loading="lazy">
+      <div>
+        <h2>${member.name}</h2>
+        <p>${member.description}</p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
+        <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
+      </div>
+    `;
+
+    membersContainer.appendChild(card);
+  });
+}
+
+// Load members and show them
+async function loadDirectory() {
+  try {
+    const members = await getMembers();
+    displayMembers(members);
+  } catch (error) {
+    membersContainer.innerHTML = "<p>Member information is currently unavailable.</p>";
+    console.error(error);
+  }
+}
+
+// Change to grid view
+gridButton.addEventListener("click", () => {
+  membersContainer.classList.add("grid-view");
+  membersContainer.classList.remove("list-view");
+});
+
+// Change to list view
+listButton.addEventListener("click", () => {
+  membersContainer.classList.add("list-view");
+  membersContainer.classList.remove("grid-view");
+});
+
+loadDirectory();
