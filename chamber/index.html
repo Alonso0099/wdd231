@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pleasant Grove Chamber of Commerce business directory">
+  <meta name="description" content="Pleasant Grove Chamber of Commerce home page with local events, weather, and featured businesses.">
   <meta name="author" content="Alonso Alvarado">
-  <meta property="og:title" content="Pleasant Grove Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore local businesses and members of the Pleasant Grove Chamber of Commerce.">
+  <meta property="og:title" content="Pleasant Grove Chamber of Commerce">
+  <meta property="og:description" content="Connect with local businesses, events, and resources in Pleasant Grove.">
   <meta property="og:image" content="https://alonso0099.github.io/wdd231/chamber/images/chamberpg-logo.webp">
-  <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/index.html">
+  <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/">
   <meta property="og:type" content="website">
-  <title>Pleasant Grove Chamber of Commerce Directory</title>
+  <title>Pleasant Grove Chamber of Commerce</title>
   <link rel="icon" href="favicon.ico">
     <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <!--Stylesheets-->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
-
+    <!--Scripts Modules-->
+  <script src="scripts/getdates.js" defer></script>
+  <script type="module" src="scripts/home.mjs"></script>
 </head>
 <body>
   <header>
@@ -40,10 +42,55 @@
   </header>
 
   <main>
- 
+    <h1>Home</h1>
+
+    <section class="hero">
+      <img src="images/pleasant-grove-hero.webp" alt="View of Pleasant Grove, Utah" width="1200" height="500">
+      <div class="hero-content">
+        <h2>Welcome to Pleasant Grove</h2>
+        <p>Connecting local businesses, residents, and community opportunities.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="home-info">
+      <section class="events">
+        <h2>Current Events</h2>
+
+        <article>
+          <h3>Business Networking Breakfast</h3>
+          <p>Meet local business owners and build new professional connections.</p>
+        </article>
+
+        <article>
+          <h3>Main Street Community Market</h3>
+          <p>Support local vendors and discover products from the Pleasant Grove area.</p>
+        </article>
+
+        <article>
+          <h3>Small Business Workshop</h3>
+          <p>Learn practical tools for marketing, customer service, and business growth.</p>
+        </article>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+
+        <p>Current Temperature: <span id="current-temp">Loading...</span></p>
+        <p>Conditions: <span id="weather-desc">Loading...</span></p>
+
+        <h3>Three Day Forecast</h3>
+        <div id="forecast"></div>
+      </section>
+    </section>
+
+    <section class="spotlights">
+      <h2>Company Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
   </main>
 
-    <footer>
+  <footer>
     
     <div>
       <strong>Pleasant Grove Chamber of Commerce</strong>
@@ -64,6 +111,6 @@
         <p>© <span id="currentYear"></span> Pleasant Grove Chamber of Commerce</p>
         <p><span id="lastModified"></span></p>
     </div>
-    </footer>
+  </footer>
 </body>
 </html>
