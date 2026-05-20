@@ -105,6 +105,10 @@ h1 {
   gap: 1rem;
 }
 
+.list-view .member-card img {
+  display: none;
+}
+
 .member-card {
   background-color: white;
   border: 1px solid #d1d5db;
