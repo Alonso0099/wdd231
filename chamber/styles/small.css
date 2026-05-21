@@ -1,16 +1,26 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #1f4f60;
+  --primary-dark: #0c2027;
+  --secondary-color: #ad5938;
+  --background-color: #f8fafc;
+  --card-color: #ffffff;
+  --text-color: #17191c;
+  --muted-text: #3c4048;
+  --border-color: #d8dadf;
+}
 
 body {
   margin: 0;
   font-family:"Poppins", Arial, Helvetica, sans-serif;
-  color: #1f2937;
+  color: var(--text-color);
   background-color: #f8fafc;
 }
 
 header {
-  background-color: #1f4e5f;
+  background-color: var(--primary-dark);
   color: white;
   padding: 1rem;
 }
@@ -25,6 +35,10 @@ header img{
   align-items: center;
   gap: 0.75rem;
   font-weight: 700;
+}
+
+.site-branding span {
+  color: white;
 }
 
 #menu-button {
@@ -65,32 +79,142 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background-color: #f2a65a;
+  background-color: var(--secondary-color);
   color: #1f2937;
 }
 
+/* General Page Layout*/
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-h1 {
-  color: #1f4e5f;
+h1, h2 {
+  color: var(--primary-color);
 }
 
-.view-toggle {
+h1 {
+  margin-top: 0;
+}
+
+a{
+  color: var(--primary-color);
+}
+img{
+  max-width: 100%;
+}
+/* Buttons and links that look like buttons */
+.cta-button,
+.view-toggle button {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta-button:hover,
+.view-toggle button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+/* Home Page*/
+
+.hero {
+  position: relative;
+  margin-bottom: 1.5rem;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+}
+
+.hero-content h2 {
+  color: white;
+  margin-top: 0;
+}
+.hero-content p{
   margin-bottom: 1rem;
 }
 
+.home-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.events,
+.weather,
+.spotlights {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.events article {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.events article:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.events h3,
+.weather h3 {
+  color: var(--primary-dark);
+}
+
+#forecast {
+  display: grid;
+  gap: 0.5rem;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Directory Page*/
 .view-toggle button {
   padding: 0.6rem 1rem;
   border: none;
   background-color: #1f4e5f;
   color: white;
   cursor: pointer;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .grid-view {
@@ -110,8 +234,8 @@ h1 {
 }
 
 .member-card {
-  background-color: white;
-  border: 1px solid #d1d5db;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
@@ -129,30 +253,27 @@ h1 {
 }
 
 .member-card h2 {
-  color: #1f4e5f;
   margin-top: 0;
 }
 
 .member-card a {
-  color: #1f4e5f;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
+#members-container {
+  min-height: 900px;
+}
+
+/* Footer */
 footer {
-  background-color: #1f4e5f;
+  background-color: var(--primary-dark);
   color: white;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-footer a {
-  color: white;
-}
-.site-branding span {
-  color: white;
-}
-
-footer span {
+footer a, footer span {
   color: white;
 }
 
@@ -160,8 +281,4 @@ footer span {
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
-}
-
-#members-container {
-  min-height: 900px;
 }
