@@ -129,14 +129,14 @@ img{
 .hero {
   position: relative;
   margin-bottom: 1.5rem;
-  background-color: var(--card-color);
+  background-color: var(--primary-color);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: clamp(200px, 50vw, 400px);
   object-fit: cover;
   display: block;
 }
@@ -147,16 +147,26 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  align-items: flex-start;
+  padding: clamp(1rem, 5vw, 2rem);
+
   color: white;
 }
 
 .hero-content h2 {
   color: white;
-  margin-top: 0;
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1.1;
 }
+
 .hero-content p{
   margin-bottom: 1rem;
+}
+
+.hero-content .cta-button {
+  font-size: clamp(0.85rem, 3.5vw, 1rem);
+  padding: 0.6rem 0.9rem;
 }
 
 .home-info {

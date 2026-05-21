@@ -20,6 +20,7 @@ nav {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
+  position: relative;
 }
 
 .hero img {
