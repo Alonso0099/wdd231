@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #1f4f60;
   --primary-dark: #0c2027;
-  --secondary-color: #ad5938;
+  --secondary-color: #8f3f24;
   --background-color: #f8fafc;
   --card-color: #ffffff;
   --text-color: #17191c;
@@ -12,19 +13,41 @@
   --border-color: #d8dadf;
 }
 
+/* General page styles */
+
 body {
   margin: 0;
-  font-family:"Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: var(--text-color);
-  background-color: #f8fafc;
+  background-color: var(--background-color);
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Header and navigation */
 
 header {
   background-color: var(--primary-dark);
   color: white;
   padding: 1rem;
 }
-header img{
+
+header img {
   max-width: 150px;
   height: auto;
   object-fit: contain;
@@ -52,11 +75,12 @@ header img{
   font-size: 1.75rem;
   cursor: pointer;
 }
-.hamburger::before{
+
+.hamburger::before {
   content: "\2630";
 }
 
-.hamburger.show::before{
+.hamburger.show::before {
   content: "\00D7";
   font-size: 2.75rem;
 }
@@ -80,31 +104,19 @@ nav a {
 nav a:hover,
 nav a.active {
   background-color: var(--secondary-color);
-  color: #1f2937;
+  color: white;
 }
 
-/* General Page Layout*/
+/* General layout */
+
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-h1, h2 {
-  color: var(--primary-color);
-}
+/* Buttons */
 
-h1 {
-  margin-top: 0;
-}
-
-a{
-  color: var(--primary-color);
-}
-img{
-  max-width: 100%;
-}
-/* Buttons and links that look like buttons */
 .cta-button,
 .view-toggle button {
   display: inline-block;
@@ -124,7 +136,7 @@ img{
   color: white;
 }
 
-/* Home Page*/
+/* Home page */
 
 .hero {
   position: relative;
@@ -149,7 +161,7 @@ img{
   justify-content: center;
   align-items: flex-start;
   padding: clamp(1rem, 5vw, 2rem);
-
+  background-color: rgb(0 0 0 / 0.45);
   color: white;
 }
 
@@ -160,7 +172,7 @@ img{
   line-height: 1.1;
 }
 
-.hero-content p{
+.hero-content p {
   margin-bottom: 1rem;
 }
 
@@ -201,6 +213,14 @@ img{
   color: var(--primary-dark);
 }
 
+.weather {
+  min-height: 220px;
+}
+
+.spotlights {
+  min-height: 500px;
+}
+
 #forecast {
   display: grid;
   gap: 0.5rem;
@@ -210,16 +230,10 @@ img{
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 420px;
 }
 
-/* Directory Page*/
-.view-toggle button {
-  padding: 0.6rem 1rem;
-  border: none;
-  background-color: #1f4e5f;
-  color: white;
-  cursor: pointer;
-}
+/* Directory page */
 
 .view-toggle {
   display: flex;
@@ -254,9 +268,9 @@ img{
 .member-card img {
   width: 100%;
   max-width: 150px;
-  aspect-ratio: 3/2;
-  object-fit: cover;
   height: 150px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   display: block;
   margin-bottom: 1rem;
   border-radius: 8px;
@@ -276,6 +290,7 @@ img{
 }
 
 /* Footer */
+
 footer {
   background-color: var(--primary-dark);
   color: white;
@@ -283,7 +298,8 @@ footer {
   margin-top: 2rem;
 }
 
-footer a, footer span {
+footer a,
+footer span {
   color: white;
 }
 
