@@ -164,6 +164,7 @@ main{
   font-size: .9rem;
   font-weight: 600;
   margin-top: .35rem;
+  cursor: pointer;
 }
 
 .course-card.completed{
@@ -236,4 +237,49 @@ column-gap: 8px;
 
 .social a:hover{
   background-color: #c7c4c4;
+}
+
+/***** COURSE DETAILS DIALOG *****/
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 3rem rgb(0 0 0 / 35%);
+  width: 90%;
+  max-width: 600px;
+  color: #1f2937;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog h2 {
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+}
+
+dialog h3 {
+  margin-top: 0;
+  color: #374151;
+}
+
+dialog p {
+  margin: 0.5rem 0;
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background-color: #dbeafe;
 }
