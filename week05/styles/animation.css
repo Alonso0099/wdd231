@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1e3a8a;
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: min(1000px, 92%);
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.demo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+}
+
+.demo-card h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.loader {
+  position: relative;
+  margin: 2rem auto 0;
+  width: 60px;
+  height: 60px;
+  border: 6px solid transparent;
+  border-color: #64748b transparent #64748b transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem rgb(30 58 138 / 35%);
+  animation: spin 1.5s linear infinite;
+}
+
+.loader::after {
+  content: "⚙️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Hover version */
+.hover-loader {
+  animation: none;
+  transition: transform 1.5s linear;
+}
+
+.hover-loader::after {
+  transform: translate(-50%, -50%) scale(0);
+  animation: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover-loader:hover {
+  transform: rotate(360deg);
+}
+
+.hover-loader:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Course card transition demo */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 18%);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: #1e3a8a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #2563eb;
+  transform: scale(1.08);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e5e7eb;
+}
+
+/* Keyframes */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+    scroll-behavior: auto;
+  }
+}

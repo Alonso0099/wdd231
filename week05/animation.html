@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Practice | WDD 231</title>
+  <meta name="description" content="Week 5 CSS animation and transition practice page for WDD 231.">
+  <meta name="author" content="Alonso Alvarado">
+
+  <link rel="stylesheet" href="styles/animation.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Animation Practice</h1>
+    <p>Week 5 activity: animations, transitions, and transforms.</p>
+  </header>
+
+  <main>
+    <section class="demo-card">
+      <h2>Automatic Loader</h2>
+      <p>This loader uses <strong>@keyframes</strong> and the <strong>animation</strong> shorthand.</p>
+
+      <div class="loader" aria-label="Loading animation"></div>
+    </section>
+
+    <section class="demo-card">
+      <h2>Hover Loader</h2>
+      <p>This loader uses <strong>transition</strong> and activates when you hover over it.</p>
+
+      <div class="loader hover-loader" aria-label="Hover animation"></div>
+    </section>
+
+    <section class="demo-card course-card">
+      <h2>Animated Course Card</h2>
+      <p>This card uses <strong>transform</strong> and <strong>transition</strong> on hover.</p>
+
+      <button>Hover Me</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Alonso Alvarado | WDD 231</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
