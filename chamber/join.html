@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Pleasant Grove Chamber of Commerce by completing a membership application form.">
+    <meta name="author" content="Alonso Alvarado">
+
+    <meta property="og:title" content="Join the Pleasant Grove Chamber of Commerce">
+    <meta property="og:description" content="Apply to become a member of the Pleasant Grove Chamber of Commerce.">
+    <meta property="og:image" content="https://alonso0099.github.io/wdd231/chamber/images/chamberpg-logo.webp">
+    <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join | Pleasant Grove Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/join.mjs"></script>
+    </head>
+
+    <body>
+    <header>
+        <div class="site-branding">
+        <img src="images/chamberpg-logo.webp" alt="Pleasant Grove Chamber logo" width="150" height="150">
+        <span>Pleasant Grove Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
+
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-layout">
+        <section class="application">
+            <h2>Membership Application</h2>
+
+            <form method="get" action="thankyou.html">
+            <label>
+                First Name
+                <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label>
+                Last Name
+                <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label>
+            <label>
+            Organization Title
+            <input
+                type="text"
+                id="organization-title"
+                name="organizationTitle"
+                title="Use at least seven characters. Only letters, spaces, and hyphens are allowed."
+                autocomplete="organization-title"
+                pattern="[A-Za-z -]{7,}"
+                minlength="7">
+            </label>
+
+            <label>
+                Email
+                <input
+                type="email"
+                name="email"
+                title="Enter your email address"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required>
+            </label>
+
+            <label>
+                Mobile Phone
+                <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+
+            <label>
+                Business or Organization Name
+                <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+            </label>
+
+            <label>
+                Membership Level
+                <select name="membership" title="Select a membership level" required>
+                <option value="">Select a Membership Level</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Business or Organization Description
+                <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+
+            <div class="membership-card">
+            <h3>NP Membership</h3>
+            <p>For nonprofit organizations. No membership fee.</p>
+            <button type="button" data-modal="np-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic support and chamber access for small businesses.</p>
+            <button type="button" data-modal="bronze-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>Additional visibility and event benefits for growing businesses.</p>
+            <button type="button" data-modal="silver-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Premium advertising, spotlight opportunities, and event benefits.</p>
+            <button type="button" data-modal="gold-modal">Learn More</button>
+            </div>
+        </section>
+        </div>
+
+        <dialog id="np-modal">
+        <button class="close-modal" type="button" aria-label="Close modal">X</button>
+        <h2>NP Membership Benefits</h2>
+        <p>This level is designed for nonprofit organizations and has no membership fee.</p>
+        <ul>
+            <li>Community networking opportunities</li>
+            <li>Access to chamber events</li>
+            <li>Basic directory listing</li>
+        </ul>
+        </dialog>
+
+        <dialog id="bronze-modal">
+        <button class="close-modal" type="button" aria-label="Close modal">X</button>
+        <h2>Bronze Membership Benefits</h2>
+        <p>This level is a good starting option for small local businesses.</p>
+        <ul>
+            <li>Business directory listing</li>
+            <li>Member event invitations</li>
+            <li>Basic chamber resources</li>
+        </ul>
+        </dialog>
+
+        <dialog id="silver-modal">
+        <button class="close-modal" type="button" aria-label="Close modal">X</button>
+        <h2>Silver Membership Benefits</h2>
+        <p>This level provides more visibility and support for growing businesses.</p>
+        <ul>
+            <li>Enhanced business directory listing</li>
+            <li>Event discounts</li>
+            <li>Training and workshop access</li>
+            <li>Possible spotlight advertising</li>
+        </ul>
+        </dialog>
+
+        <dialog id="gold-modal">
+        <button class="close-modal" type="button" aria-label="Close modal">X</button>
+        <h2>Gold Membership Benefits</h2>
+        <p>This level provides premium chamber benefits and promotional opportunities.</p>
+        <ul>
+            <li>Premium directory listing</li>
+            <li>Priority spotlight advertising</li>
+            <li>Special event recognition</li>
+            <li>Marketing and networking support</li>
+        </ul>
+        </dialog>
+    </main>
+
+    <footer>
+        <div>
+        <strong>Pleasant Grove Chamber of Commerce</strong>
+        <p>70 S 100 E<br>Pleasant Grove, UT 84062</p>
+        <p>info@pgchamber.org</p>
+        <p>(801) 555-2300</p>
+        </div>
+
+        <div class="social">
+        <a href="https://www.linkedin.com/in/alonso-alvarado-4b5498223/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16">
+        </a>
+        <a href="https://github.com/alonso0099" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub logo" width="16" height="16">
+        </a>
+        <a href="https://www.instagram.com/alonsoav_/" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram logo" width="16" height="16">
+        </a>
+        <a href="https://www.facebook.com/alonso.alvaradovargas.96" target="_blank" rel="noopener">
+            <img src="images/facebook.svg" alt="Facebook logo" width="16" height="16">
+        </a>
+        </div>
+
+        <div>
+        <p>WDD 231 Class Project</p>
+        <p>Alonso Alvarado</p>
+        <p>© <span id="currentYear"></span> Pleasant Grove Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
+        </div>
+  </footer>
+</body>
+</html>

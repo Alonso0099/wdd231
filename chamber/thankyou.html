@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you page for the Pleasant Grove Chamber of Commerce membership application.">
+    <meta name="author" content="Alonso Alvarado">
+
+    <meta property="og:title" content="Thank You | Pleasant Grove Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the Pleasant Grove Chamber of Commerce.">
+    <meta property="og:image" content="https://alonso0099.github.io/wdd231/chamber/images/chamberpg-logo.webp">
+    <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <title>Thank You | Pleasant Grove Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/thankyou.mjs"></script>
+    </head>
+
+    <body>
+    <header>
+        <div class="site-branding">
+        <img src="images/chamberpg-logo.webp" alt="Pleasant Grove Chamber logo" width="150" height="150">
+        <span>Pleasant Grove Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
+
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You</h1>
+
+        <section class="thankyou-card">
+        <h2>Membership Application Received</h2>
+        <p>Thank you for applying to join the Pleasant Grove Chamber of Commerce. We will review your information and contact you soon.</p>
+
+        <h3>Submitted Information</h3>
+        <div id="application-summary"></div>
+
+        <p><a class="cta-button" href="index.html">Return to Home</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        <strong>Pleasant Grove Chamber of Commerce</strong>
+        <p>70 S 100 E<br>Pleasant Grove, UT 84062</p>
+        <p>info@pgchamber.org</p>
+        <p>(801) 555-2300</p>
+        </div>
+
+        <div class="social">
+        <a href="https://www.linkedin.com/in/alonso-alvarado-4b5498223/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16">
+        </a>
+        <a href="https://github.com/alonso0099" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub logo" width="16" height="16">
+        </a>
+        <a href="https://www.instagram.com/alonsoav_/" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram logo" width="16" height="16">
+        </a>
+        <a href="https://www.facebook.com/alonso.alvaradovargas.96" target="_blank" rel="noopener">
+            <img src="images/facebook.svg" alt="Facebook logo" width="16" height="16">
+        </a>
+        </div>
+
+        <div>
+        <p>WDD 231 Class Project</p>
+        <p>Alonso Alvarado</p>
+        <p>© <span id="currentYear"></span> Pleasant Grove Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
+        </div>
+  </footer>
+</body>
+</html>

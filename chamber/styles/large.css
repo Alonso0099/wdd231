@@ -52,6 +52,18 @@
     min-height: 320px;
   }
 
+  /* Join page */
+
+.join-layout {
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+}
+
+.application,
+.membership-levels {
+  padding: 1.5rem;
+}
+
   #spotlight-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     min-height: 260px;
