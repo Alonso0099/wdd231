@@ -27,5 +27,5 @@ summary.innerHTML = `
   <p><strong>Email:</strong> ${email}</p>
   <p><strong>Mobile Phone:</strong> ${phone}</p>
   <p><strong>Business/Organization:</strong> ${organization}</p>
-  <p><strong>Submitted:</strong> ${submittedDate}</p>
+  <p><strong>Form Loaded:</strong> ${submittedDate}</p>
 `;
