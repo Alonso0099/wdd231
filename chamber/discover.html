@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover local parks, trails, history, and community places in Pleasant Grove, Utah.">
+  <meta name="author" content="Alonso Alvarado">
+  <meta property="og:title" content="Discover Pleasant Grove">
+  <meta property="og:description" content="Explore local parks, trails, history, and community places in Pleasant Grove.">
+  <meta property="og:image" content="https://alonso0099.github.io/wdd231/chamber/images/chamberpg-logo.webp">
+  <meta property="og:url" content="https://alonso0099.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+  <title>Pleasant Grove Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+    <!--Scripts Modules-->
+  <script src="scripts/getdates.js" defer></script>
+  <script type="module" src="scripts/discover.mjs"></script>
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+        <img src="images/chamberpg-logo.webp" alt="Pleasant Grove Chamber logo" width="150" height="150">
+        <span>Pleasant Grove Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
+
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html"  class="active">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Discover Pleasant Grove</h1>
+
+        <section class="visitor-message" id="visitor-message"></section>
+
+        <section class="discover-grid" id="discover-container"></section>
+    </main>
+
+    <footer>
+    
+        <div>
+        <strong>Pleasant Grove Chamber of Commerce</strong>
+        <p>70 S 100 E<br>Pleasant Grove, UT 84062</p>
+        <p>info@pgchamber.org</p>
+        <p>(801) 555-2300</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alonso-alvarado-4b5498223/" target="_blank" rel="noopener"> <img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+            <a href="https://github.com/alonso0099" target="_blank" rel="noopener"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/alonsoav_/" target="_blank" rel="noopener"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/alonso.alvaradovargas.96" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
+        </div>
+
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Alonso Alvarado</p>
+            <p>© <span id="currentYear"></span> Pleasant Grove Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
