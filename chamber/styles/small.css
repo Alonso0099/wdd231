@@ -11,6 +11,7 @@
   --text-color: #17191c;
   --muted-text: #3c4048;
   --border-color: #d8dadf;
+  --shadow: 0 2px 6px rgb(0 0 0 / 0.08);
 }
 
 /* General page styles */
@@ -37,6 +38,12 @@ h2 {
 
 h1 {
   margin-top: 0;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Header and navigation */
@@ -107,18 +114,13 @@ nav a.active {
   color: white;
 }
 
-/* General layout */
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 /* Buttons */
 
 .cta-button,
-.view-toggle button {
+.view-toggle button,
+.membership-card button,
+.discover-card button,
+input[type="submit"] {
   display: inline-block;
   padding: 0.65rem 1rem;
   border: none;
@@ -131,9 +133,27 @@ main {
 }
 
 .cta-button:hover,
-.view-toggle button:hover {
+.view-toggle button:hover,
+.membership-card button:hover,
+.discover-card button:hover,
+input[type="submit"]:hover {
   background-color: var(--primary-dark);
   color: white;
+}
+
+/* Shared card style */
+
+.member-card,
+.application,
+.membership-levels,
+.thankyou-card,
+.discover-card,
+.events,
+.weather,
+.spotlights {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
 }
 
 /* Home page */
@@ -191,9 +211,6 @@ main {
 .events,
 .weather,
 .spotlights {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
   padding: 1rem;
 }
 
@@ -258,18 +275,14 @@ main {
 }
 
 .member-card {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
+  box-shadow: var(--shadow);
 }
 
 .member-card img {
   width: 100%;
   max-width: 150px;
   height: 150px;
-  aspect-ratio: 3 / 2;
   object-fit: cover;
   display: block;
   margin-bottom: 1rem;
@@ -289,27 +302,6 @@ main {
   min-height: 900px;
 }
 
-/* Footer */
-
-footer {
-  background-color: var(--primary-dark);
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer a,
-footer span {
-  color: white;
-}
-
-.social {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-
 /* Join page */
 
 .join-layout {
@@ -320,9 +312,6 @@ footer span {
 
 .application,
 .membership-levels {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
   padding: 1rem;
 }
 
@@ -356,15 +345,7 @@ textarea:focus {
 }
 
 input[type="submit"] {
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
   font-weight: 700;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: var(--primary-dark);
 }
 
 .membership-levels {
@@ -395,32 +376,6 @@ input[type="submit"]:hover {
 .membership-card h3 {
   margin-top: 0;
   color: var(--primary-color);
-}
-
-.membership-card button {
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.membership-card button:hover {
-  background-color: var(--primary-dark);
-}
-
-@keyframes cardEntrance {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Modals */
@@ -460,9 +415,6 @@ dialog h2 {
 /* Thank you page */
 
 .thankyou-card {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
   padding: 1rem;
   max-width: 700px;
 }
@@ -474,7 +426,6 @@ dialog h2 {
   padding: 1rem;
   margin: 1rem 0;
 }
-
 
 /* Discover page */
 
@@ -534,12 +485,9 @@ dialog h2 {
 }
 
 .discover-card {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1rem;
   display: grid;
   gap: 0.75rem;
+  padding: 1rem;
 }
 
 .discover-card h2 {
@@ -572,11 +520,46 @@ dialog h2 {
 
 .discover-card button {
   justify-self: start;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--secondary-color);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-dark);
   color: white;
-  font-weight: 600;
-  cursor: pointer;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a,
+footer span {
+  color: white;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Animation */
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .membership-card {
+    animation: none;
+  }
 }
