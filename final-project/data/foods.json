@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Broccoli",
+    "category": "vegetable",
+    "prep": "Blanch before freezing",
+    "freezerLife": "8 to 12 months",
+    "bestUse": "Soups, stir-fries, casseroles, and side dishes",
+    "tip": "Cool completely and dry well before packing."
+  },
+  {
+    "id": 2,
+    "name": "Green Beans",
+    "category": "vegetable",
+    "prep": "Trim and blanch before freezing",
+    "freezerLife": "8 to 12 months",
+    "bestUse": "Side dishes, soups, and skillet meals",
+    "tip": "Cut into smaller pieces before freezing if you want faster cooking later."
+  },
+  {
+    "id": 3,
+    "name": "Cauliflower",
+    "category": "vegetable",
+    "prep": "Cut into florets and blanch before freezing",
+    "freezerLife": "8 to 12 months",
+    "bestUse": "Roasted sides, soups, mash, and casseroles",
+    "tip": "Freeze in a single layer first to prevent large clumps."
+  },
+  {
+    "id": 4,
+    "name": "Bell Peppers",
+    "category": "vegetable",
+    "prep": "Wash, slice, and freeze raw",
+    "freezerLife": "6 to 8 months",
+    "bestUse": "Fajitas, eggs, soups, and stir-fries",
+    "tip": "They soften after freezing, so they are best for cooked meals."
+  },
+  {
+    "id": 5,
+    "name": "Onions",
+    "category": "vegetable",
+    "prep": "Chop and freeze raw",
+    "freezerLife": "6 to 8 months",
+    "bestUse": "Soups, sauces, eggs, and cooked meals",
+    "tip": "Freeze flat in bags so you can break off small amounts."
+  },
+  {
+    "id": 6,
+    "name": "Carrots",
+    "category": "vegetable",
+    "prep": "Slice and blanch before freezing",
+    "freezerLife": "10 to 12 months",
+    "bestUse": "Soups, stews, fried rice, and side dishes",
+    "tip": "Blanching helps keep color and texture better."
+  },
+  {
+    "id": 7,
+    "name": "Chicken Breast",
+    "category": "protein",
+    "prep": "Portion with marinade or cook before freezing",
+    "freezerLife": "3 to 6 months",
+    "bestUse": "Bowls, tacos, salads, pasta, and quick dinners",
+    "tip": "Freeze portions flat so they thaw faster."
+  },
+  {
+    "id": 8,
+    "name": "Ground Beef",
+    "category": "protein",
+    "prep": "Freeze raw in portions or cook before freezing",
+    "freezerLife": "3 to 4 months",
+    "bestUse": "Tacos, pasta, rice bowls, and casseroles",
+    "tip": "Flatten the bag before freezing to save space."
+  },
+  {
+    "id": 9,
+    "name": "Salmon",
+    "category": "protein",
+    "prep": "Portion and wrap tightly before freezing",
+    "freezerLife": "2 to 3 months",
+    "bestUse": "Rice bowls, salads, and dinner plates",
+    "tip": "Use airtight wrapping to reduce freezer burn."
+  },
+  {
+    "id": 10,
+    "name": "Pork Tenderloin",
+    "category": "protein",
+    "prep": "Slice or portion with seasoning before freezing",
+    "freezerLife": "3 to 6 months",
+    "bestUse": "Rice bowls, roasted meals, and sandwiches",
+    "tip": "Label the marinade flavor before freezing."
+  },
+  {
+    "id": 11,
+    "name": "Blueberries",
+    "category": "fruit",
+    "prep": "Wash, dry, and freeze in a single layer",
+    "freezerLife": "8 to 12 months",
+    "bestUse": "Smoothies, oatmeal, pancakes, and baking",
+    "tip": "Dry them well before freezing to prevent ice crystals."
+  },
+  {
+    "id": 12,
+    "name": "Bananas",
+    "category": "fruit",
+    "prep": "Peel and slice before freezing",
+    "freezerLife": "2 to 3 months",
+    "bestUse": "Smoothies, banana bread, and pancakes",
+    "tip": "Freeze ripe bananas when they are sweet and soft."
+  },
+  {
+    "id": 13,
+    "name": "Strawberries",
+    "category": "fruit",
+    "prep": "Remove tops, slice, and freeze in a single layer",
+    "freezerLife": "8 to 12 months",
+    "bestUse": "Smoothies, yogurt bowls, sauces, and desserts",
+    "tip": "Freeze on a tray first so the pieces stay separate."
+  },
+  {
+    "id": 14,
+    "name": "Cooked Rice",
+    "category": "grain",
+    "prep": "Cook, cool quickly, and freeze in portions",
+    "freezerLife": "1 to 2 months",
+    "bestUse": "Rice bowls, fried rice, soups, and quick sides",
+    "tip": "Freeze in thin portions for faster reheating."
+  },
+  {
+    "id": 15,
+    "name": "Cooked Beans",
+    "category": "grain",
+    "prep": "Cook, cool, and freeze with a little liquid",
+    "freezerLife": "3 to 6 months",
+    "bestUse": "Soups, bowls, burritos, and side dishes",
+    "tip": "A little cooking liquid helps prevent the beans from drying out."
+  }
+]

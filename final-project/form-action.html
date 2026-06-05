@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Prep Pantry | Plan Submitted</title>
+  <meta name="description" content="Confirmation page that displays the submitted freezer meal prep plan details.">
+  <meta name="author" content="Alonso Alvarado">
+
+  <meta property="og:title" content="My Prep Pantry Plan Submitted">
+  <meta property="og:description" content="Review the freezer meal prep plan submitted through My Prep Pantry.">
+  <meta property="og:image" content="https://alonso0099.github.io/wdd231/final-project/images/my-prep-pantry-og.webp">
+  <meta property="og:url" content="https://alonso0099.github.io/wdd231/final-project/form-action.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.mjs"></script>
+  <script type="module" src="scripts/form-action.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <a href="index.html" class="site-logo">My Prep Pantry</a>
+      <button id="menu-button" type="button" aria-label="Open navigation menu"></button>
+    </div>
+
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Food Guide</a>
+      <a href="planner.html">Prep Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Prep Plan Submitted</h1>
+      <p>
+        Here is the information from your meal prep plan.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>Your Plan Details</h2>
+      <div id="submitted-plan" class="submitted-plan"></div>
+
+      <a class="button" href="planner.html">Create Another Plan</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> My Prep Pantry</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p>
+      <a href="site-plan.html">Site Plan</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="#">Video Demo</a>
+    </p>
+  </footer>
+</body>
+</html>

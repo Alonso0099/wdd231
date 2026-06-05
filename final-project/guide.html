@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Prep Pantry | Food Guide</title>
+  <meta name="description" content="A freezer food guide with common foods, preparation tips, freezer life, and best uses for meal prep.">
+  <meta name="author" content="Alonso Alvarado">
+
+  <meta property="og:title" content="My Prep Pantry Food Guide">
+  <meta property="og:description" content="Explore common foods that can be prepared and frozen for simple meal prep.">
+  <meta property="og:image" content="https://alonso0099.github.io/wdd231/final-project/images/my-prep-pantry-og.webp">
+  <meta property="og:url" content="https://alonso0099.github.io/wdd231/final-project/guide.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.mjs"></script>
+  <script type="module" src="scripts/guide.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <a href="index.html" class="site-logo">My Prep Pantry</a>
+      <button id="menu-button" type="button" aria-label="Open navigation menu"></button>
+    </div>
+
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Food Guide</a>
+      <a href="planner.html">Prep Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Freezer Food Guide</h1>
+      <p>
+        Explore common foods that can be prepared ahead of time and frozen for later meals.
+        Use the filters to browse by category and open each item for more details.
+      </p>
+    </section>
+
+    <section class="guide-controls" aria-label="Food guide filters">
+      <h2>Filter Foods</h2>
+
+      <div class="filter-buttons">
+        <button type="button" class="filter-button active" data-category="all">All</button>
+        <button type="button" class="filter-button" data-category="vegetable">Vegetables</button>
+        <button type="button" class="filter-button" data-category="protein">Proteins</button>
+        <button type="button" class="filter-button" data-category="fruit">Fruits</button>
+        <button type="button" class="filter-button" data-category="grain">Grains</button>
+      </div>
+    </section>
+
+    <section class="food-section">
+      <h2>Foods to Prep and Freeze</h2>
+      <div id="food-cards" class="food-grid"></div>
+    </section>
+
+    <dialog id="food-dialog">
+      <div class="dialog-content">
+        <button id="close-dialog" class="close-button" type="button" aria-label="Close food details">×</button>
+        <div id="dialog-details"></div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> My Prep Pantry</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p>
+      <a href="site-plan.html">Site Plan</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="#">Video Demo</a>
+    </p>
+  </footer>
+</body>
+</html>

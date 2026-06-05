@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Prep Pantry | Prep Planner</title>
+  <meta name="description" content="Create a simple freezer meal prep plan with basic planning questions and weekly prep ideas.">
+  <meta name="author" content="Alonso Alvarado">
+
+  <meta property="og:title" content="My Prep Pantry Prep Planner">
+  <meta property="og:description" content="Create a simple plan to organize freezer meal prep ideas for the week.">
+  <meta property="og:image" content="https://alonso0099.github.io/wdd231/final-project/images/my-prep-pantry-og.webp">
+  <meta property="og:url" content="https://alonso0099.github.io/wdd231/final-project/planner.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <a href="index.html" class="site-logo">My Prep Pantry</a>
+      <button id="menu-button" type="button" aria-label="Open navigation menu"></button>
+    </div>
+
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Food Guide</a>
+      <a href="planner.html">Prep Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Prep Planner</h1>
+      <p>
+        Use this page to create a simple meal prep plan. The goal is to organize what you want
+        to prepare, when you want to prep it, and how many meals you want to make.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>Simple Prep Steps</h2>
+      <ol>
+        <li>Choose a few foods or meals that freeze well.</li>
+        <li>Prepare ingredients before they go bad.</li>
+        <li>Label containers with the food name and date.</li>
+        <li>Use older freezer items first.</li>
+      </ol>
+    </section>
+
+    <section class="form-section">
+      <h2>Create Your Prep Plan</h2>
+
+      <form method="get" action="form-action.html" class="prep-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="prep-day">Preferred Prep Day</label>
+        <select id="prep-day" name="prep-day" required>
+          <option value="">Select a day</option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+
+        <label for="meal-count">How many meals do you want to prep?</label>
+        <input type="number" id="meal-count" name="meal-count" min="1" max="30" required>
+
+        <label for="prep-focus">Main Prep Focus</label>
+        <select id="prep-focus" name="prep-focus" required>
+          <option value="">Select a focus</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="ingredients">Ingredients Only</option>
+        </select>
+
+        <label for="notes">Notes or food ideas</label>
+        <textarea id="notes" name="notes" rows="5" placeholder="Example: chicken, broccoli, rice, smoothie fruit packs"></textarea>
+
+        <button class="button" type="submit">Submit Prep Plan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> My Prep Pantry</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p>
+      <a href="site-plan.html">Site Plan</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="#">Video Demo</a>
+    </p>
+  </footer>
+</body>
+</html>
