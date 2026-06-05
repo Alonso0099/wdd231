@@ -5,6 +5,8 @@ const filterButtons = document.querySelectorAll(".filter-button");
 const foodDialog = document.querySelector("#food-dialog");
 const closeDialog = document.querySelector("#close-dialog");
 const dialogDetails = document.querySelector("#dialog-details");
+const foodCount = document.querySelector("#food-count");
+const favoriteCount = document.querySelector("#favorite-count");
 
 let foods = [];
 
@@ -31,29 +33,55 @@ async function getFoods() {
 function displayFoods(foodList) {
   foodCards.innerHTML = "";
 
+  updateGuideSummary(foodList);
+  if (foodList.length === 0) {
+    foodCards.innerHTML = `
+        <p class="empty-message">
+        No foods found in this category yet.
+        </p>
+    `;
+    return;
+}
   foodList.forEach((food) => {
     const card = document.createElement("article");
     card.classList.add("food-card");
 
     card.innerHTML = `
-      <h3>${food.name}</h3>
-      <p><strong>Category:</strong> ${capitalize(food.category)}</p>
-      <p><strong>Prep:</strong> ${food.prep}</p>
-      <p><strong>Freezer Life:</strong> ${food.freezerLife}</p>
-      <div class="card-actions">
+    <div class="food-card-header">
+        <span class="category-tag">${capitalize(food.category)}</span>
+        <span class="favorite-status">${isFavorite(food.id) ? "Saved ★" : "Not saved"}</span>
+    </div>
+
+    <h3>${food.name}</h3>
+
+    <p><strong>Prep:</strong> ${food.prep}</p>
+    <p><strong>Freezer Life:</strong> ${food.freezerLife}</p>
+
+    <div class="card-actions">
         <button class="details-button" type="button" data-id="${food.id}">
-          View Details
+        View Details
         </button>
         <button class="favorite-button" type="button" data-id="${food.id}">
-          ${isFavorite(food.id) ? "★ Saved" : "☆ Save"}
+        ${isFavorite(food.id) ? "★ Saved" : "☆ Save"}
         </button>
-      </div>
+    </div>
     `;
 
     foodCards.appendChild(card);
   });
 
   addCardEventListeners();
+}
+
+function updateGuideSummary(foodList) {
+  if (foodCount) {
+    foodCount.textContent = foodList.length;
+  }
+
+  if (favoriteCount) {
+    const savedButtons = foods.filter((food) => isFavorite(food.id));
+    favoriteCount.textContent = savedButtons.length;
+  }
 }
 
 function addCardEventListeners() {
@@ -79,6 +107,11 @@ function addCardEventListeners() {
 
 function getCurrentFoodList() {
   const activeFilter = document.querySelector(".filter-button.active");
+
+  if (!activeFilter) {
+    return foods;
+  }
+
   const category = activeFilter.dataset.category;
 
   if (category === "all") {
@@ -89,6 +122,10 @@ function getCurrentFoodList() {
 }
 
 function openFoodDialog(food) {
+  if (!food) {
+    return;
+  }
+
   dialogDetails.innerHTML = `
     <h2>${food.name}</h2>
     <p><strong>Category:</strong> ${capitalize(food.category)}</p>

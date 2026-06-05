@@ -39,27 +39,71 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-intro">
-      <h1>Prep Planner</h1>
-      <p>
-        Use this page to create a simple meal prep plan. The goal is to organize what you want
-        to prepare, when you want to prep it, and how many meals you want to make.
-      </p>
-    </section>
+<main>
+  <section class="page-intro planner-intro">
+    <p class="eyebrow">Plan your prep day</p>
+    <h1>Build a simple freezer meal prep plan.</h1>
+    <p>
+      Use this page to organize your prep day, decide how many meals you want to prepare,
+      and write down food ideas before you start cooking.
+    </p>
+  </section>
 
-    <section class="content-section">
-      <h2>Simple Prep Steps</h2>
-      <ol>
-        <li>Choose a few foods or meals that freeze well.</li>
-        <li>Prepare ingredients before they go bad.</li>
-        <li>Label containers with the food name and date.</li>
-        <li>Use older freezer items first.</li>
-      </ol>
-    </section>
+  <section class="planner-layout">
+    <div class="planner-info">
+      <section class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Simple routine</p>
+          <h2>Prep in four steps</h2>
+        </div>
 
-    <section class="form-section">
-      <h2>Create Your Prep Plan</h2>
+        <div class="planner-steps">
+          <article>
+            <span>1</span>
+            <h3>Choose foods</h3>
+            <p>Pick freezer-friendly foods from the guide.</p>
+          </article>
+
+          <article>
+            <span>2</span>
+            <h3>Prepare</h3>
+            <p>Wash, chop, cook, portion, or blanch as needed.</p>
+          </article>
+
+          <article>
+            <span>3</span>
+            <h3>Label</h3>
+            <p>Add the food name and date before freezing.</p>
+          </article>
+
+          <article>
+            <span>4</span>
+            <h3>Use first</h3>
+            <p>Plan to use older freezer items before newer ones.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Quick reminder</p>
+          <h2>Before freezing</h2>
+        </div>
+
+        <ul class="prep-checklist">
+          <li>Cool cooked foods before packing.</li>
+          <li>Remove extra air from freezer bags.</li>
+          <li>Freeze flat when possible to save space.</li>
+          <li>Write the date on each bag or container.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="form-section planner-form-card">
+      <div class="section-heading">
+        <p class="eyebrow">Your plan</p>
+        <h2>Create Your Prep Plan</h2>
+      </div>
 
       <form method="get" action="form-action.html" class="prep-form">
         <label for="name">Name</label>
@@ -95,7 +139,8 @@
         <button class="button" type="submit">Submit Prep Plan</button>
       </form>
     </section>
-  </main>
+  </section>
+</main>
 
   <footer>
     <p>&copy; <span id="current-year"></span> My Prep Pantry</p>

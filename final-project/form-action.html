@@ -40,21 +40,39 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-intro">
-      <h1>Prep Plan Submitted</h1>
-      <p>
-        Here is the information from your meal prep plan.
-      </p>
-    </section>
+<main>
+  <section class="page-intro submitted-intro">
+    <p class="eyebrow">Plan received</p>
+    <h1>Your prep plan is ready.</h1>
+    <p>
+      Here is a simple summary of the meal prep plan you submitted.
+      You can review it below or return to the planner to create another one.
+    </p>
+  </section>
 
-    <section class="content-section">
-      <h2>Your Plan Details</h2>
+  <section class="submitted-layout">
+    <div class="content-section submitted-card">
+      <div class="section-heading">
+        <p class="eyebrow">Your plan</p>
+        <h2>Submitted Details</h2>
+      </div>
+
       <div id="submitted-plan" class="submitted-plan"></div>
 
       <a class="button" href="planner.html">Create Another Plan</a>
-    </section>
-  </main>
+    </div>
+
+    <aside class="content-section submitted-tip">
+      <div class="card-icon">❄️</div>
+      <h2>Prep reminder</h2>
+      <p>
+        Label freezer bags with the food name and date before storing them.
+        This makes it easier to use older items first.
+      </p>
+      <a href="guide.html">Back to Food Guide</a>
+    </aside>
+  </section>
+</main>
 
   <footer>
     <p>&copy; <span id="current-year"></span> My Prep Pantry</p>

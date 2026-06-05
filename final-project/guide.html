@@ -49,22 +49,32 @@
       </p>
     </section>
 
-    <section class="guide-controls" aria-label="Food guide filters">
+    <div class="guide-layout">
+  <aside class="guide-controls" aria-label="Food guide filters">
+    <div class="section-heading">
+      <p class="eyebrow">Browse by category</p>
       <h2>Filter Foods</h2>
+    </div>
 
-      <div class="filter-buttons">
-        <button type="button" class="filter-button active" data-category="all">All</button>
-        <button type="button" class="filter-button" data-category="vegetable">Vegetables</button>
-        <button type="button" class="filter-button" data-category="protein">Proteins</button>
-        <button type="button" class="filter-button" data-category="fruit">Fruits</button>
-        <button type="button" class="filter-button" data-category="grain">Grains</button>
-      </div>
-    </section>
+    <div class="guide-summary">
+      <p><strong>Total foods:</strong> <span id="food-count">0</span></p>
+      <p><strong>Saved favorites:</strong> <span id="favorite-count">0</span></p>
+    </div>
 
-    <section class="food-section">
-      <h2>Foods to Prep and Freeze</h2>
-      <div id="food-cards" class="food-grid"></div>
-    </section>
+    <div class="filter-buttons">
+      <button type="button" class="filter-button active" data-category="all">All</button>
+      <button type="button" class="filter-button" data-category="vegetable">Vegetables</button>
+      <button type="button" class="filter-button" data-category="protein">Proteins</button>
+      <button type="button" class="filter-button" data-category="fruit">Fruits</button>
+      <button type="button" class="filter-button" data-category="grain">Grains</button>
+    </div>
+  </aside>
+
+  <section class="food-section">
+    <h2>Foods to Prep and Freeze</h2>
+    <div id="food-cards" class="food-grid"></div>
+  </section>
+</div>
 
     <dialog id="food-dialog">
       <div class="dialog-content">

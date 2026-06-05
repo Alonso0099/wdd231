@@ -174,8 +174,176 @@ footer {
 footer a {
   color: var(--white);
 }
+.page-intro {
+  margin: 1.5rem 0 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.guide-controls,
+.food-section,
+.form-section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-button,
+.close-button {
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.filter-button {
+  padding: 0.75rem 1rem;
+  color: var(--deep-green);
+  background-color: var(--soft-sage);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  color: var(--white);
+  background-color: var(--deep-green);
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.prep-form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.prep-form label {
+  font-weight: 700;
+}
+
+.prep-form input,
+.prep-form select,
+.prep-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  border: 1px solid #9f9f9f;
+  border-radius: 8px;
+}
+
+.prep-form input:focus,
+.prep-form select:focus,
+.prep-form textarea:focus {
+  outline: 3px solid var(--soft-sage);
+  border-color: var(--deep-green);
+}
+.planner-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.planner-info {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.planner-info .content-section,
+.planner-form-card {
+  margin: 0;
+}
+
+.planner-steps {
+  display: grid;
+  gap: 1rem;
+}
+
+.planner-steps article {
+  padding: 1rem;
+  background-color: var(--warm-cream);
+  border: 1px solid var(--soft-sage);
+  border-radius: 14px;
+}
+
+.planner-steps span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0.75rem;
+  place-items: center;
+  color: var(--white);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  background-color: var(--deep-green);
+  border-radius: 50%;
+}
+
+.planner-steps h3 {
+  margin: 0 0 0.4rem;
+}
+
+.planner-steps p {
+  margin: 0;
+}
+
+.prep-checklist {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prep-checklist li {
+  padding: 0.85rem;
+  background-color: var(--warm-cream);
+  border-left: 6px solid var(--deep-green);
+  border-radius: 10px;
+}
+
+#food-dialog {
+  width: min(90%, 600px);
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+}
+
+#food-dialog::backdrop {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.dialog-content {
+  position: relative;
+  padding: 2rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  background-color: var(--deep-green);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
 
 .food-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
   padding: 1.5rem;
   background-color: var(--warm-cream);
   border: 1px solid var(--soft-sage);
@@ -184,6 +352,7 @@ footer a {
 
 .food-card h3 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .card-actions {
@@ -225,7 +394,28 @@ footer a {
   border-radius: 10px;
 }
 
+
+.submitted-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.submitted-card,
+.submitted-tip {
+  margin: 0;
+}
+
+.submitted-tip {
+  align-self: start;
+}
+
+.submitted-tip a {
+  font-weight: 700;
+}
+
 .submitted-plan {
+  display: grid;
+  gap: 0.75rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
   background-color: var(--soft-sage);
@@ -233,5 +423,217 @@ footer a {
 }
 
 .submitted-plan p {
-  margin: 0.5rem 0;
+  margin: 0;
+  padding: 0.85rem;
+  background-color: var(--warm-cream);
+  border-radius: 10px;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  align-items: stretch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.secondary-button {
+  color: var(--deep-green);
+  background-color: var(--soft-sage);
+}
+
+.secondary-button:hover {
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+.hero-image-placeholder {
+  display: grid;
+  min-height: 260px;
+  padding: 1.5rem;
+  place-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgb(47 93 80 / 80%), rgb(47 93 80 / 80%)),
+    var(--soft-sage);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.hero-image-placeholder div {
+  padding: 1.5rem;
+  color: var(--white);
+  border: 2px dashed rgb(255 255 255 / 70%);
+  border-radius: 14px;
+}
+
+.hero-image-placeholder span {
+  display: block;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hero-image-placeholder p {
+  margin-bottom: 0;
+}
+
+.intro-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  margin-top: 0;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+}
+
+.feature-card p {
+  flex: 1;
+}
+
+.feature-card a {
+  font-weight: 700;
+}
+
+.card-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  place-items: center;
+  font-size: 1.7rem;
+  background-color: var(--soft-sage);
+  border-radius: 50%;
+}
+
+.steps-section,
+.cta-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.steps-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.steps-grid article {
+  padding: 1.25rem;
+  background-color: var(--warm-cream);
+  border: 1px solid var(--soft-sage);
+  border-radius: 14px;
+}
+
+.steps-grid span {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.75rem;
+  place-items: center;
+  color: var(--white);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  background-color: var(--deep-green);
+  border-radius: 50%;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: var(--soft-sage);
+}
+
+.cta-section h2 {
+  margin-top: 0;
+}
+
+
+.guide-summary {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.guide-summary p {
+  margin: 0;
+  padding: 0.85rem;
+  background-color: var(--warm-cream);
+  border: 1px solid var(--soft-sage);
+  border-radius: 10px;
+}
+
+.food-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.category-tag,
+.favorite-status {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.category-tag {
+  color: var(--white);
+  background-color: var(--deep-green);
+}
+
+.favorite-status {
+  color: var(--deep-green);
+  background-color: var(--soft-sage);
+}
+
+.food-card .card-actions {
+  margin-top: auto;
+}
+
+.empty-message {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--soft-sage);
+  border-radius: 10px;
+}
+
+.guide-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.guide-controls {
+  align-self: start;
+}
+
+.guide-controls .section-heading h2 {
+  margin-bottom: 0;
 }
