@@ -497,6 +497,7 @@ dialog h2 {
 
 .discover-card figure {
   margin: 0;
+  max-width: 360px;
 }
 
 .discover-card img {
