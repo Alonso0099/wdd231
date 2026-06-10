@@ -114,11 +114,10 @@
     grid-template-columns: 1fr 1fr;
     min-height: 1500px;
     grid-template-areas:
-      "card1 card2"
-      "card1 card3"
-      "card4 card3"
-      "card5 card6"
-      "card7 card8";
+      "falls grove"
+      "canal discovery"
+      "manila pioneer"
+      "rose historic";
   }
 
   .discover-card {
@@ -139,13 +138,11 @@
 
 @media screen and (min-width: 1025px) {
   .discover-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 650px;
     grid-template-areas:
-      "card1 card1 card2"
-      "card3 card4 card2"
-      "card3 card5 card6"
-      "card7 card8 card8";
+      "grove falls  canal discovery"
+      "manila pioneer rose historic";
   }
 
   .discover-card {
@@ -155,15 +152,6 @@
   .discover-card h2 {
     min-height: 2.5rem;
   }
-}
-.discover-card figure {
-  max-width: 320px;
-}
-
-.discover-card img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
 }
 
 /* Motion accessibility */

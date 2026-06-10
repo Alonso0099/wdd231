@@ -442,46 +442,45 @@ dialog h2 {
   gap: 1rem;
   min-height: 2600px;
   grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8";
+  "falls"
+  "grove"
+  "canal"
+  "discovery"
+  "manila"
+  "pioneer"
+  "rose"
+  "historic";
+}
+.discover-card:nth-child(1) {
+  grid-area: falls;
 }
 
-.area-1 {
-  grid-area: card1;
+.discover-card:nth-child(2) {
+  grid-area: grove;
 }
 
-.area-2 {
-  grid-area: card2;
+.discover-card:nth-child(3) {
+  grid-area: canal;
 }
 
-.area-3 {
-  grid-area: card3;
+.discover-card:nth-child(4) {
+  grid-area: discovery;
 }
 
-.area-4 {
-  grid-area: card4;
+.discover-card:nth-child(5) {
+  grid-area: manila;
 }
 
-.area-5 {
-  grid-area: card5;
+.discover-card:nth-child(6) {
+  grid-area: pioneer;
 }
 
-.area-6 {
-  grid-area: card6;
+.discover-card:nth-child(7) {
+  grid-area: rose;
 }
 
-.area-7 {
-  grid-area: card7;
-}
-
-.area-8 {
-  grid-area: card8;
+.discover-card:nth-child(8) {
+  grid-area: historic;
 }
 
 .discover-card {

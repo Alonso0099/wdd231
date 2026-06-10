@@ -14,7 +14,7 @@ function displayPlaces() {
 
   places.forEach((place, index) => {
     const card = document.createElement("article");
-    card.classList.add("discover-card", `area-${index + 1}`);
+    card.classList.add("discover-card");
 
     card.innerHTML = `
       <h2>${place.name}</h2>
