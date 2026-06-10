@@ -458,35 +458,20 @@ footer a {
   background-color: var(--accent);
 }
 
-.hero-image-placeholder {
-  display: grid;
+.hero-image {
   min-height: 260px;
-  padding: 1.5rem;
-  place-items: center;
-  text-align: center;
-  background:
-    linear-gradient(rgb(47 93 80 / 80%), rgb(47 93 80 / 80%)),
-    var(--soft-sage);
+  overflow: hidden;
+  background-color: var(--soft-sage);
   border-radius: 16px;
   box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
 }
 
-.hero-image-placeholder div {
-  padding: 1.5rem;
-  color: var(--white);
-  border: 2px dashed rgb(255 255 255 / 70%);
-  border-radius: 14px;
-}
-
-.hero-image-placeholder span {
+.hero-image img {
   display: block;
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.hero-image-placeholder p {
-  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
 }
 
 .intro-section {
@@ -505,14 +490,31 @@ footer a {
 .feature-card {
   display: flex;
   flex-direction: column;
-  min-height: 260px;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 0;
+  border-top: none;
 }
 
-.feature-card p {
+.feature-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.feature-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.feature-card-body p {
   flex: 1;
 }
 
-.feature-card a {
+.feature-card-body a {
   font-weight: 700;
 }
 
@@ -626,7 +628,7 @@ footer a {
 
 .guide-layout {
   display: grid;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .guide-controls {

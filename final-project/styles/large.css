@@ -17,14 +17,19 @@
   nav {
     display: flex;
     flex-direction: row;
-    padding: 0;
     gap: 0.5rem;
+    padding: 0;
   }
 
   .hero {
     grid-template-columns: 2fr 1fr;
     align-items: stretch;
     padding: 3rem 0;
+  }
+
+  .home-hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: stretch;
   }
 
   .hero-content {
@@ -37,18 +42,16 @@
     font-size: 2.5rem;
   }
 
-  .hero-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-    .hero-actions {
+  .hero-actions {
     flex-direction: row;
+  }
+
+  .hero-image {
+    min-height: 360px;
+  }
+
+  .hero-image img {
+    min-height: 360px;
   }
 
   .intro-section {
@@ -56,16 +59,26 @@
     align-items: center;
   }
 
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-card {
+    height: 100%;
+  }
+
+  .feature-card img {
+    aspect-ratio: 3 / 2;
+  }
+
   .steps-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-    .guide-summary {
-    grid-template-columns: repeat(2, 1fr);
-  }
-    .guide-layout {
+  .guide-layout {
     grid-template-columns: 280px 1fr;
     align-items: start;
+    gap: 1.5rem;
   }
 
   .guide-controls {
@@ -88,22 +101,21 @@
   }
 
   .planner-layout {
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: start;
-}
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
 
-.planner-form-card {
-  position: sticky;
-  top: 1rem;
-}
+  .planner-form-card {
+    position: sticky;
+    top: 1rem;
+  }
 
-.planner-steps {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .planner-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.submitted-layout {
-  grid-template-columns: 1fr 320px;
-  align-items: start;
-}
-  
+  .submitted-layout {
+    grid-template-columns: 1fr 320px;
+    align-items: start;
+  }
 }
