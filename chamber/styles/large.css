@@ -141,7 +141,7 @@
     grid-template-columns: repeat(4, 1fr);
     min-height: 650px;
     grid-template-areas:
-      "grove falls  canal discovery"
+      "falls grove canal discovery"
       "manila pioneer rose historic";
   }
 
