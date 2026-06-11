@@ -442,15 +442,16 @@ dialog h2 {
   gap: 1rem;
   min-height: 2600px;
   grid-template-areas:
-  "falls"
-  "grove"
-  "canal"
-  "discovery"
-  "manila"
-  "pioneer"
-  "rose"
-  "historic";
+    "falls"
+    "grove"
+    "canal"
+    "discovery"
+    "manila"
+    "pioneer"
+    "rose"
+    "historic";
 }
+
 .discover-card:nth-child(1) {
   grid-area: falls;
 }
@@ -487,16 +488,26 @@ dialog h2 {
   display: grid;
   gap: 0.75rem;
   padding: 1rem;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  grid-template-areas:
+    "title"
+    "photo"
+    "address"
+    "description"
+    "button";
 }
 
 .discover-card h2 {
+  grid-area: title;
   margin: 0;
   font-size: 1.15rem;
 }
 
 .discover-card figure {
+  grid-area: photo;
   margin: 0;
-  max-width: 360px;
 }
 
 .discover-card img {
@@ -509,16 +520,19 @@ dialog h2 {
 }
 
 .discover-card address {
+  grid-area: address;
   font-style: normal;
   font-weight: 600;
   color: var(--muted-text);
 }
 
 .discover-card p {
+  grid-area: description;
   margin: 0;
 }
 
 .discover-card button {
+  grid-area: button;
   justify-self: start;
 }
 

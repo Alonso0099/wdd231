@@ -111,20 +111,32 @@
 
 @media screen and (min-width: 641px) {
   .discover-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     min-height: 1500px;
     grid-template-areas:
-      "falls grove"
-      "canal discovery"
-      "manila pioneer"
-      "rose historic";
+      "falls"
+      "grove"
+      "canal"
+      "discovery"
+      "manila"
+      "pioneer"
+      "rose"
+      "historic";
   }
 
   .discover-card {
-    align-content: start;
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+    grid-template-areas:
+      "photo title"
+      "photo address"
+      "photo description"
+      "photo button";
   }
 
   .discover-card img {
+    width: 300px;
+    height: 200px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 
@@ -138,19 +150,31 @@
 
 @media screen and (min-width: 1025px) {
   .discover-grid {
-    grid-template-columns: repeat(4, 1fr);
-    min-height: 650px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 900px;
     grid-template-areas:
-      "falls grove canal discovery"
-      "manila pioneer rose historic";
+      "falls grove"
+      "canal discovery"
+      "manila pioneer"
+      "rose historic";
   }
 
   .discover-card {
-    align-content: start;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "photo title"
+      "photo address"
+      "photo description"
+      "photo button";
+  }
+
+  .discover-card img {
+    width: 220px;
+    height: 150px;
   }
 
   .discover-card h2 {
-    min-height: 2.5rem;
+    min-height: auto;
   }
 }
 
