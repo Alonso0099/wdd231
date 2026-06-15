@@ -626,6 +626,17 @@ footer a {
   border-radius: 10px;
 }
 
+/* Helps mobile performance by delaying off-screen rendering */
+.card-section,
+.steps-section,
+.cta-section,
+.food-section,
+.planner-layout,
+.submitted-layout {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
+}
+
 .guide-layout {
   display: grid;
   gap: 1.25rem;
@@ -637,14 +648,4 @@ footer a {
 
 .guide-controls .section-heading h2 {
   margin-bottom: 0;
-}
-
-.card-section,
-.steps-section,
-.cta-section,
-.food-section,
-.planner-layout,
-.submitted-layout {
-  content-visibility: auto;
-  contain-intrinsic-size: 600px;
 }
