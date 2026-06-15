@@ -459,7 +459,7 @@ footer a {
 }
 
 .hero-image {
-  min-height: 260px;
+  min-height: 220px;
   overflow: hidden;
   background-color: var(--soft-sage);
   border-radius: 16px;
@@ -470,7 +470,7 @@ footer a {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 220px;
   object-fit: cover;
 }
 
@@ -637,4 +637,14 @@ footer a {
 
 .guide-controls .section-heading h2 {
   margin-bottom: 0;
+}
+
+.card-section,
+.steps-section,
+.cta-section,
+.food-section,
+.planner-layout,
+.submitted-layout {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
 }

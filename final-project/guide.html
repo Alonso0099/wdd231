@@ -21,8 +21,10 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/large.css">
+  <script type="module" src="scripts/main.mjs" media="(min-width: 768px)"></script>
 
+  <link rel="preload" href="data/foods.json" as="fetch" crossorigin="anonymous">
+  
   <script type="module" src="scripts/main.mjs"></script>
   <script type="module" src="scripts/guide.mjs"></script>
 </head>
