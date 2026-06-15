@@ -629,10 +629,7 @@ footer a {
 /* Helps mobile performance by delaying off-screen rendering */
 .card-section,
 .steps-section,
-.cta-section,
-.food-section,
-.planner-layout,
-.submitted-layout {
+.cta-section {
   content-visibility: auto;
   contain-intrinsic-size: 600px;
 }
